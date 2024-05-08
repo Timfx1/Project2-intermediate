@@ -33,6 +33,7 @@ body {
   font-size: small;
 }
 
+
 .middlefooter {
   text-align: left;
   display: flex;
@@ -40,6 +41,7 @@ body {
   justify-content: space-around;
   gap: 10px;
   margin: 10px;
+
 }
 
 footer {
@@ -52,6 +54,12 @@ footer {
   top: 0;
   height: 80%;
   width: 40%;
+  background-image: url(./images/bg-pattern-footer-desktop.svg);
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0;
 }
 
 .howwework {
@@ -67,12 +75,18 @@ footer {
 
 }
 
-.howwework img {
+#howweworkimg {
   position: absolute;
   top: 0;
   right: 0;
-  width: 40%;
-  
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  background-position: right;
+  background-image: url(./images/bg-pattern-how-we-work-desktop.svg)
 }
 
 .long {
@@ -84,17 +98,21 @@ footer {
 .relative {
   background-color: hsl(256, 26%, 20%);
   height: 200px;
+
 }
 
 .absolute {
   position: absolute;
-  width: 80px;
-  height: 150px;
+  width: 100%;
+  height: 80%;
+
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .middleimage {
   width: 70px;
-  height: 70px;
+  /* height: 70px; */
   z-index: 1;
 }
 
@@ -110,27 +128,30 @@ footer {
 }
 
 .picturebottom {
-  bottom: -50px;
+  background-image: url(./images/bg-pattern-intro-left-desktop.svg);
+  bottom: -100px;
   left: 0;
-  width: 15%;
-  height: 200px;
+  background-position: left;
 }
 
 .pictureup {
+  background-image: url(./images/bg-pattern-intro-right-desktop.svg);
   top: 0;
   right: 0;
-  width: 25%;
-  height: 60%;
+
   z-index: 2;
+  background-position: right;
 }
 
 .middlepic {
+  background-image: url("./images/image-intro-desktop.jpg");
   left: 60vw;
   right: 40px;
   top: 30px;
   bottom: -90px;
-  height: 300px;
+  height: 200px;
   width: 300px;
+  background-position: center;
 }
 
 a {
@@ -143,10 +164,12 @@ a {
   flex-direction: column;
   justify-content: space-around;
   width: 50%;
- 
+  height: 100%;
   color: white;
   margin-left: 40px;
   padding: 10px;
+  background-color: hsl(256, 26%, 20%);
+
 }
 
 .ert {
@@ -171,6 +194,31 @@ a {
     background-image: url(./images/image-intro-mobile.jpg);
   }
 
+  .pictureup {
+    background-image: url(./images/bg-pattern-intro-right-mobile.svg);
+    bottom: -100px;
+    right: 0;
+    background-position: right;
+  }
+
+  .picturebottom {
+    background-image: url(./images/bg-pattern-intro-left-mobile.svg);
+    top: 0;
+    left: 0;
+    background-position: left;
+    height: 100px;
+  }
+
+  #howweworkimg {
+    background-image: url(./images/bg-pattern-how-we-work-mobile.svg)
+  }
+
+  #footerimg {
+
+    background-image: url(./images/bg-pattern-footer-mobile.svg);
+
+  }
+
   .middlefooter {
     flex-direction: column;
     text-align: center;
@@ -186,14 +234,14 @@ a {
   }
 
   .wedifferentplus {
-    margin:0;
+    margin: 0;
 
   }
 
   #toppurple {
     width: 100%;
     align-items: center;
-    
+
   }
 
   .hr {
@@ -202,25 +250,32 @@ a {
 
   #hr {
     width: 40% !important;
-    margin: 0 auto!important; 
+    margin: 0 auto !important;
   }
+
   .howwework {
-    
+
     flex-direction: column;
-}
-#toppurple {
-  margin: 0 auto;
-}
-.middlecontent{align-items: center;}
-.ert{
-  background-color: rgba(127, 255, 212, 0);
-  border: 2px solid white;
-  color: white;
-}
-.navfooter {
-  display: flex;
-  flex-direction: row;
-}
+  }
+
+  #toppurple {
+    margin: 0 auto;
+  }
+
+  .middlecontent {
+    align-items: center;
+  }
+
+  .ert {
+    background-color: rgba(127, 255, 212, 0);
+    border: 2px solid white;
+    color: white;
+  }
+
+  .navfooter {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 
