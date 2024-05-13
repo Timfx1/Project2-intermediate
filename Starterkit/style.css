@@ -149,7 +149,7 @@ footer {
   right: 40px;
   top: 30px;
   bottom: -90px;
-  height: 200px;
+  height: 300px;
   width: 300px;
   background-position: center;
 }
@@ -177,6 +177,9 @@ a {
   display: inline;
   color: black;
 }
+#disapear{
+  display: none;
+}
 
 @media (max-width:768px) {
   body {
@@ -196,7 +199,7 @@ a {
 
   .pictureup {
     background-image: url(./images/bg-pattern-intro-right-mobile.svg);
-    bottom: -100px;
+    top: 100px;
     right: 0;
     background-position: right;
   }
@@ -275,6 +278,16 @@ a {
   .navfooter {
     display: flex;
     flex-direction: row;
+  }
+  #disapear {
+    display: block;
+    width: 100vw;
+  }
+  .middlepic{display: none;}
+  header nav a{display: none;}
+  header
+  {
+    margin-bottom: 100px;
   }
 }
 
